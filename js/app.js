@@ -8,9 +8,9 @@ function loadTasks(taskList){
         divTask.className="taskCard";
         divTask.innerHTML = `
             ${task.img?"<img src='" + task.img + "' />":""}
-            <h4> <input type="checkbox" ${task.completed?"checked":""} title="check completed">  ${task.title + ' ' + i}</h4>
-            <span>created on ${task.createdOn.toLocaleString()} by ${task.createdBy}</span>
+            <h1> <input type="checkbox" ${task.completed?"checked":""} title="check completed">  ${task.title + ' ' + i}</h1>
             <p>${task.description}</p>
+            <span>Created on ${task.createdOn.toLocaleString()} by ${task.createdBy}</span>
             <span>Due on ${task.dueDate.toLocaleString()}</span>
             `;
 

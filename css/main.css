@@ -68,10 +68,13 @@ h1 {
   font-size: 20px;
   color: #333;
 }
-
-form {
-
+.taskCard span:first-child {
+  float: left;
 }
+.taskCard span:last-child {
+  float: right;
+}
+
 form input {
   display: block;
   box-shadow: none;
@@ -85,7 +88,7 @@ form input {
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   margin-bottom: 10px;
-  width: 300px;
+  width: 500px;
 }
 form input:focus {
   color: #495057;
