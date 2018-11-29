@@ -12,7 +12,7 @@ function loadTasks(taskList){
             <span>created on ${task.createdOn.toLocaleString()} by ${task.createdBy}</span>
             <p>${task.description}</p>
             <span>Due on ${task.dueDate.toLocaleString()}</span>
-        `;
+            `;
 
         if(task.completed)
             divTask.classList.add("taskCompleted");
@@ -22,6 +22,7 @@ function loadTasks(taskList){
 
         container.appendChild(divTask);
     });
+
 }
 
 
@@ -38,12 +39,14 @@ const newTaskForm = function () {
   let today = new Date();
   today = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`;
   form.id="new-task-form";
+  form.className="taskCard";
   form.innerHTML = `
+  <h1>Create new task</h1>
   <form>
-  <input type="text" name="username" id="username" placeholder="User name">
-  <input type="text" name="image" id="image" placeholder="Image url">
-  <input type="text" name="title" id="title" placeholder="Task title">
-  <textarea name="description" id="description" placeholder="Task description"></textarea>
+  <input type="text" name="username" id="username" placeholder="User name" />
+  <input type="text" name="image" id="image" placeholder="Image url" />
+  <input type="text" name="title" id="title" placeholder="Task title" />
+  <input type="text" name="description" id="description" placeholder="Task description" />
   <input type="date" name="due-date" id="due-date" value="${today}" min="${today}">
   <button type="button" id="submit">Save task</button>
   </form>
