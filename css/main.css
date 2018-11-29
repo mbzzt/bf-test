@@ -1,0 +1,25 @@
+
+body{
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.taskCard{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: gray 2px 2px;
+}
+
+.taskLate{
+    background-color: lightpink !important;
+}
+
+.taskCompleted{
+    background-color: lightgreen !important;
+}
+
+.taskCard >img{
+    width: 160px;
+}

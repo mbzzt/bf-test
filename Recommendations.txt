@@ -1,0 +1,6 @@
+- Create form for adding new tasks
+- Add creation date and due date to new tasks
+- Implement date picker
+- Format dates
+- Improve styles of completed tasks: strikethrough, grey-out, etc.
+- Add button to delete tasks
